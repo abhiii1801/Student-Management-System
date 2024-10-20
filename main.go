@@ -8,7 +8,7 @@ import (
 )
 
 func connect_database() *sql.DB {
-    dsn := "root:qwerty123@tcp(127.0.0.1:3306)/college"
+    dsn := "username:password@tcp(host:port)/database"
     db, err := sql.Open("mysql", dsn)
     if err != nil {
         fmt.Println("Error opening database:", err)
